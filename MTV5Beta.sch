@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -8627,6 +8627,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="U$5" library="EF_Lib" deviceset="LED-RGB" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X4" device=""/>
+<part name="TP2" library="testpad" deviceset="TP" device="B1,27"/>
 </parts>
 <sheets>
 <sheet>
@@ -8787,6 +8788,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND23" gate="1" x="138.43" y="167.64"/>
 <instance part="U$5" gate="G$1" x="391.16" y="195.58"/>
 <instance part="JP1" gate="A" x="25.4" y="152.4"/>
+<instance part="TP2" gate="G$1" x="241.3" y="289.56"/>
 </instances>
 <busses>
 </busses>
@@ -9755,6 +9757,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="251.46" y1="287.02" x2="264.16" y2="287.02" width="0.1524" layer="91"/>
 <junction x="251.46" y="287.02"/>
 <label x="254" y="287.02" size="1.778" layer="95"/>
+<pinref part="TP2" gate="G$1" pin="TP"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VCC"/>
